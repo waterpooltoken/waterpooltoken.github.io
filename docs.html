@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>The WATER Protocol | The Decentralized Reserve Currency</title>
+    <meta
+        content="WATER is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world."
+        name="description">
+    <meta content="The WATER Protocol | The Decentralized Reserve Currency" property="og:title">
+    <meta
+        content="WATER is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world."
+        property="og:description">
+    <meta content="./assets/water.png" property="og:image">
+    <meta content="The WATER Protocol | The Decentralized Reserve Currency" property="twitter:title">
+    <meta
+        content="WATER is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world."
+        property="twitter:description">
+    <meta content="./assets/water.png" property="twitter:image">
+    <meta property="og:type" content="website">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="./assets/water.png" rel="shortcut icon" type="image/x-icon">
+    <link href="./assets/water.png" rel="apple-touch-icon">
+
+    <meta name="twitter:image" content="./assets/water.png">
+    <meta name="twitter:description"
+        content="WATER is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The WATER Protocol | The Decentralized Reserve Currency">
+
+    <meta property="og:image" content="./assets/water.png">
+</head>
+<!--Fork of carrto website. simple and easy to use-->
+<body id="carrto-finance">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="sidebarContainer" class="col-auto" style="z-index: 1000002;">
+                <div id="sidebar" class="d-flex flex-column align-items-center pe-2 py-4">
+                    <a id="logo" href="" class="text-decoration-none mb-5 w-100 d-flex align-items-center ps-3 pe-2">
+                        <img src="./assets/water.png" alt="logo-icon" class="col-2">
+                    </a>
+
+                    <ul id="sidebar-nav" class="list-unstyled p-0 py-5">
+                        <li class="mb-4 py-2 px-5 rounded-pill active">
+                            <a href="index.html" class="text-decoration-none text-reset d-flex align-items-center">
+                                <span class="ms-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="mb-4 py-2 px-5 rounded-pill">
+                            <a href="stake.html" class="text-decoration-none text-reset d-flex align-items-center">
+                                <span class="ms-3">Stake WATER</span>
+                            </a>
+                        </li>
+                        <li class="mb-4 py-2 px-5 rounded-pill">
+                            <a href="stakelp.html" class="text-decoration-none text-reset d-flex align-items-center">
+                                <span class="ms-3">Stake LP</span>
+                            </a>
+                        </li>
+                        <li class="mb-4 py-2 px-5 rounded-pill">
+                            <a target="_blank" href="https://app.zyberswap.io/exchange/swap?outputCurrency=0xD3E0665C10b6782D4411815387C0995f070B6e72"
+                                class="text-decoration-none text-reset d-flex align-items-center">
+                                <span class="ms-3">Swap</span>
+                            </a>
+                        </li>
+                        <li class="mb-4 py-2 px-5 rounded-pill">
+                            <a target="_blank" href="https://dexscreener.com/arbitrum/0xD3E0665C10b6782D4411815387C0995f070B6e72"
+                                class="text-decoration-none text-reset d-flex align-items-center">
+                                <span class="ms-3">Chart</span>
+                            </a>
+                        </li>
+                        <li class="mb-4 py-2 px-5 rounded-pill">
+                            <a href="docs.html" class="text-decoration-none text-reset d-flex align-items-center">
+                                <span class="ms-3">Docs</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-around w-100 px-4">
+                        <!-- <a href="" class="text-decoration-none text-reset fs-5 social-icon-hover">
+                            <i class="bi bi-send-fill"></i>
+                        </a> -->
+                        <a href="#"
+                            class="text-decoration-none text-reset fs-5 social-icon-hover">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <!-- <a href="" class="text-decoration-none text-reset fs-5 social-icon-hover">
+                            <i class="bi bi-discord"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="overlay" style="z-index: 1000001;"></div>
+
+            <main class="col pt-4">
+                <div class="w-100 position-fixed end-0 top-0" style="height: 68px; z-index: 100001;">
+                    <div class="d-flex pt-3 px-sm-3">
+                        <button type="button" id="showSidebar" class="d-lg-none btn fs-5"><i
+                                class="bi bi-list"></i></button>
+
+                        <div class="dropdown ms-auto">
+
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1"
+                                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 52px, 0px);"
+                                data-popper-placement="bottom-start">
+                                <li><a class="dropdown-item" href="">Buy
+                                        on ZYB</a></li>
+                                <li><a class="dropdown-item" href="">Chart</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button id="connect" type="button" class="btn rounded-1 ms-3">
+                            Connect Wallet
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container pt-3">
+                    <div class="px-sm-3 mt-5">
+                        <div><p style='font-size:20px;color:black'>
+                            Due to the continuous destruction of natural resources by the development of human society, the global fresh water resources are constantly decreasing.
+                            Water supply decreases rapidly with 0.003% per block.The only way to protec your water is to put them in the pool.<br/><br/>
+                            There are two types of reward pools. The rewards are 2 million water token per block.
+                            LP token pool earns you 9/10 of the rewards by staking WATER/WETH LP on zyberswap. The single token pool earns you only 1/10 of the rewards by staking your WATER token. 
+                            Both of these pools have no lock-up period.<br/><br/>
+                            
+                            Admin has revoke all owner role and mint role:<br/>
+                            revoke owner role tx: 0xb9277ef70685574e6f1580eef4a67cca8a5a66eaea50ea2f417ea86d71cd3aa9<br/>
+                            revoke mint role tx:  0x11155c3b174544cc68a93ce24d83170fef7abcf3e9c95b636b580463098e353c<br/><br/>
+
+                            <p style="font-size:25px;color:aliceblue">WATER Contract Address:              0xD3E0665C10b6782D4411815387C0995f070B6e72</p><br/><br/>
+                            <p style="font-size:25px;color:aliceblue">Pool Contract Address:               0x6DB0cd5E9Ba4403a2d54C9091C912Fb18Be738D3</p><br/><br/>
+                            <p style='font-size:20px;color:deeppink'>Blockchain projects are very risky, and you may lose all your investment principal.</p>
+                        </p></div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rangeslider.js@2.3.3/dist/rangeslider.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/web3.min.js"></script>
+    <script src="./js/detect-provider.js"></script>
+    <script src="./js/ethers.umd.min.js"></script>
+    <script src="js/base.js"></script>
+
+    <script>
+        document.getElementById("showSidebar").addEventListener("click", function () {
+            document.getElementById("sidebarContainer").classList.add("show");
+            document.getElementById("overlay").style.display = "block"
+        });
+
+        document.getElementById("overlay").addEventListener("click", function () {
+            document.getElementById("sidebarContainer").classList.remove("show");
+            document.getElementById("overlay").style.display = "none"
+        });
+
+
+        let balance;
+        let stakedAmount;
+        let amountTo = [];
+        let amountFrom = [];
+        var dataL;
+        var totalStaked = 0;
+        let totalSupply;
+        let blackHoleAmount;
+        let ethPrice;
+        let price;
+
+        async function doAfterConnect() {
+            displayText('#connect', SHORTADR(CURADR));
+        }
+        (async () => {
+            // do global
+            select('#connect').onclick = async () => {
+                await conn();
+            };
+
+            ethPrice = 1 / (await getPrice('weth'));
+
+
+            let liqReserves = await CONTS['pairweth'].getReserves();
+            let liqETH = liqReserves[0] / ETHDIV;
+            let liqBalance = liqETH * ethPrice;
+            //displayText("#stakedRate", `$${COMMA(ROUND(stakedAmount / ETHDIV / circulatingSupply * 100, 2))}%`);
+
+            let liqEggs = liqReserves[1] / ETHDIV;
+            let liqRate = liqETH / liqEggs;
+            price = liqRate * ethPrice;
+            displayText("#price", `$${COMMA(ROUND(price, 8))}`);
+
+
+            $('[data-bs-toggle="tooltip"]').tooltip();
+
+            await getCurAdr();
+            if (CURADR == null) {
+                // connect wallet button
+                return;
+            }
+            await doAfterConnect();
+
+            // let [res, data] = await GAS('web3', 'manualRebase', []);
+            // if (res == true) {
+            //   return;
+            // } else {
+            //   gasEstimation = data;
+            //   displayText("#lastRebase", `${lastRebaseBlock}, ${curBlock}, ${lastRebaseTime}, ${gasEstimation}`);
+            // }
+
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        })();
+    </script>
+</body>
+
+</html>
